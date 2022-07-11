@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import ExpenseItem from './components/ExpenseItem';
+import Expenses from './components/Expenses';
 import './App.css';
 
 function App() {
@@ -24,9 +23,7 @@ function App() {
   
   return (
     <div className="App">
-      <ExpenseItem date={expenses[0].date} description={expenses[0].description} amount={expenses[0].price}></ExpenseItem>
-      <ExpenseItem date={expenses[1].date} description={expenses[1].description} amount={expenses[1].price}></ExpenseItem>
-      <ExpenseItem date={expenses[2].date} description={expenses[2].description} amount={expenses[2].price}></ExpenseItem>
+      <Expenses expenses={expenses}/>
     </div>
   );
 }
