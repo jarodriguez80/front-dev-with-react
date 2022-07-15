@@ -9,7 +9,7 @@ const Expenses = ({ expenses }) => {
         {expenses.map((expense, i) => (
             <ExpenseItem
             key={i}
-            description={expense.description}
+            description ={expense.description}
             amount={expense.price}
             date={expense.date}
             />
