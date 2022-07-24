@@ -2,7 +2,7 @@ import './ExpenseItem.css';
 import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
 
-function ExpenseItem (props){
+const ExpenseItem = (props) => {
     //new Date(2022,7,9);
     //"Weight machine";
     //160.86;

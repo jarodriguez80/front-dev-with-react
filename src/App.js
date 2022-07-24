@@ -2,7 +2,7 @@ import Expenses from './components/Expenses/Expenses';
 import './App.css';
 import Card from './components/UI/Card';
 
-function App() {
+const App = ()=> {
 
   const expenses=[
     {
