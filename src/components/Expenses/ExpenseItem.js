@@ -1,17 +1,18 @@
 import './ExpenseItem.css';
 import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
+import React, {useState} from 'react'
 
 const ExpenseItem = (props) => {
     //new Date(2022,7,9);
     //"Weight machine";
     //160.86;
 
-    const expenseDescription = props.description;
+    const [expenseDescription,setExpenseDescription] = useState(props.description);
     const expenseAmount = props.amount;
 
     const clickHandler = () => {
-        console.log("Clicked");
+        setExpenseDescription("Updated!");
     }
 
     return (
