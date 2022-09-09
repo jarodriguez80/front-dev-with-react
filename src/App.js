@@ -1,6 +1,7 @@
 import Expenses from './components/Expenses/Expenses';
 import './App.css';
 import Card from './components/UI/Card';
+import NewExpense from './components/NewExpenses/NewExpense'
 
 const App = ()=> {
 
@@ -25,6 +26,7 @@ const App = ()=> {
   return (
     <div className="App">
       <Card>
+        <NewExpense/>
         <Expenses className="card" expenses={expenses}/>
       </Card>      
     </div>
