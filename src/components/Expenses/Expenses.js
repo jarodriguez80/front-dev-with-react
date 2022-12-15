@@ -18,7 +18,7 @@ const Expenses = ({ expenses }) => {
         <div>
             <Card className="expenses">
             <ExpensesFilter selectedYear={yearFilter} onChangeSelect={onChangeSelectHandler}/>
-            {expenses.map((expense) => (
+            {expenses.filter(expense => expense.date.getFullYear().toString()===yearFilter).map((expense) => (
                 <ExpenseItem
                 key={expense.id}
                 description ={expense.description}
