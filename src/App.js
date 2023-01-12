@@ -13,13 +13,25 @@ const mockedExpenses=[
   },
   {
     id:"b",
-    date: new Date(2021,7,9),
+    date: new Date(2022,7,9),
     description: "Smart watch",
     price:789.80
   },
   {
     id:"c",
-    date: new Date(2020,7,9),
+    date: new Date(2022,1,9),
+    description: "Jan Weight machine",
+    price: 160.86
+  },
+  {
+    id:"d",
+    date: new Date(2022,2,9),
+    description: "Jan Weight machine",
+    price: 160.86
+  },
+  {
+    id:"e",
+    date: new Date(2020,2,9),
     description: "Sport shoes UA",
     price: 143.80
   }
