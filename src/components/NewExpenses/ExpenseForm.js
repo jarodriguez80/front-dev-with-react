@@ -21,7 +21,7 @@ const ExpenseForm = (properties)=>{
         event.preventDefault();
         const expense ={
             description:enteredDescription,
-            price:enteredPrice,
+            price:+enteredPrice,
             date:new Date(enteredDate)
         };
         
